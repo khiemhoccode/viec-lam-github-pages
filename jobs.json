@@ -1,0 +1,226 @@
+{
+ "updated": "2026-11-24",
+ "jobs": [
+  {
+   "t": "Embedded Firmware Engineer",
+   "c": "Bosch Group",
+   "loc": "Hồ Chí Minh",
+   "sal": "Thỏa thuận",
+   "ex": "Theo tin",
+   "dl": "27/12/2026",
+   "lv": "mid",
+   "tg": [
+    "Embedded",
+    "Firmware"
+   ],
+   "u": "https://vn.joboko.com/viec-lam-eta-embedded-firmware-engineer-xvi6756908",
+   "src": "Joboko",
+   "manual": true
+  },
+  {
+   "t": "Firmware Engineer (Fresher) – English or Japanese speaking",
+   "c": "Công ty chưa rõ (xem tin)",
+   "loc": "Tân Bình, HCM",
+   "sal": "Đến 20 triệu",
+   "ex": "Không yêu cầu",
+   "dl": "",
+   "lv": "fresher",
+   "tg": [
+    "Firmware",
+    "IoT",
+    "Embedded"
+   ],
+   "u": "https://jobsgo.vn/viec-lam/firmware-engineer-fresher-level-english-or-japanese-speaking-27963967966.html",
+   "src": "Jobsgo",
+   "n": "Dùng C/C++ trên ESP-IDF hoặc Arduino, rất hợp sinh viên mới ra trường.",
+   "manual": true
+  },
+  {
+   "t": "Fresher AI Engineer (Computer Vision)",
+   "c": "Motorola Solutions",
+   "loc": "Thủ Đức, HCM",
+   "sal": "Xem tin",
+   "ex": "Fresher",
+   "dl": "",
+   "lv": "fresher",
+   "tg": [
+    "AI",
+    "Computer Vision"
+   ],
+   "u": "https://itviec.com/viec-lam-it/fresher-ai-engineer-computer-vision-motorola-solutions-5653",
+   "src": "ITviec",
+   "manual": true
+  },
+  {
+   "t": "Embedded AI Engineer",
+   "c": "Motorola Solutions Vietnam R&D Center",
+   "loc": "Thủ Đức, HCM",
+   "sal": "Xem tin",
+   "ex": "Theo tin",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "Embedded",
+    "AI",
+    "Edge AI"
+   ],
+   "u": "https://www.fit.hcmus.edu.vn/tin-tuc/d/cong-ty-tnhh-motorola-solutions-vietnam-rd-center-tuyen-dung-embedded-ai-engineer",
+   "src": "FIT-HCMUS",
+   "manual": true
+  },
+  {
+   "t": "Embedded/Edge AI Intern",
+   "c": "Xem tin (Joboko)",
+   "loc": "Hồ Chí Minh",
+   "sal": "Thỏa thuận",
+   "ex": "Thực tập",
+   "dl": "17/12/2026",
+   "lv": "fresher",
+   "tg": [
+    "Embedded",
+    "Edge AI",
+    "AI"
+   ],
+   "u": "https://vn.joboko.com/viec-lam-embedded-edge-ai-intern-xvi6845081",
+   "src": "Joboko",
+   "manual": true
+  },
+  {
+   "t": "Computer Vision Engineer (Junior)",
+   "c": "FPT",
+   "loc": "Quận 7, HCM",
+   "sal": "Xem tin",
+   "ex": "Junior",
+   "dl": "",
+   "lv": "fresher",
+   "tg": [
+    "Computer Vision",
+    "AI"
+   ],
+   "u": "https://tuyendung.fpt.com.vn/computer-vision-engineer-junior-12735",
+   "src": "FPT Careers",
+   "manual": true
+  },
+  {
+   "t": "AI Engineer (Firmware/Embedded + Edge AI + CV)",
+   "c": "FPT",
+   "loc": "Hồ Chí Minh",
+   "sal": "Xem tin",
+   "ex": "Theo tin",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "AI",
+    "Edge AI",
+    "Firmware",
+    "Embedded",
+    "Computer Vision",
+    "IoT"
+   ],
+   "u": "https://fptjobs.com/ai-engineer-24127",
+   "src": "FPT Jobs",
+   "n": "Kết hợp firmware MCU/SoC, bảo mật IoT và thị giác máy tính.",
+   "manual": true
+  },
+  {
+   "t": "Firmware Engineer (HCM & HN)",
+   "c": "FPT",
+   "loc": "Hồ Chí Minh",
+   "sal": "Xem tin",
+   "ex": "Theo tin",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "Firmware",
+    "Embedded"
+   ],
+   "u": "https://fptjobs.com/firmware-engineer-hcm--hn-24462",
+   "src": "FPT Jobs",
+   "manual": true
+  },
+  {
+   "t": "Embedded Software Engineer (Junior/Senior)",
+   "c": "STYL Solutions (Rep. Office, Singapore)",
+   "loc": "Thủ Đức, HCM",
+   "sal": "Xem tin",
+   "ex": "Junior–Senior",
+   "dl": "",
+   "lv": "fresher",
+   "tg": [
+    "Embedded"
+   ],
+   "u": "https://topdev.vn/viec-lam/embedded-software-engineer-junior-senior-the-rep-office-of-styl-solutions-pte-ltd-in-hcmc-2053920",
+   "src": "TopDev",
+   "manual": true
+  },
+  {
+   "t": "Embedded Firmware Engineer",
+   "c": "Công ty TNHH Hòa Kiến Nhân",
+   "loc": "Hồ Chí Minh",
+   "sal": "11 – 17 triệu",
+   "ex": "1 – 4 năm",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "Embedded",
+    "Firmware"
+   ],
+   "u": "https://123job.vn/viec-lam/embedded-firmware-engineer-A9V82y0Pqn",
+   "src": "123job",
+   "manual": true
+  },
+  {
+   "t": "Firmware Engineer",
+   "c": "SolarBK",
+   "loc": "Hồ Chí Minh",
+   "sal": "Thỏa thuận",
+   "ex": "Mid-level",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "Firmware",
+    "IoT",
+    "Điện tử"
+   ],
+   "u": "https://embedded.jobs/job/Firmware-Engineer-with-SolarBK-6fa820",
+   "src": "embedded.jobs",
+   "n": "Phòng R&D, mảng năng lượng mặt trời.",
+   "manual": true
+  },
+  {
+   "t": "Embedded Firmware / RTOS Engineer",
+   "c": "Nexle",
+   "loc": "Hồ Chí Minh / Đà Nẵng",
+   "sal": "20 – 30 triệu",
+   "ex": "4 – 5 năm",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "Embedded",
+    "Firmware"
+   ],
+   "u": "https://jobsgo.vn/viec-lam/embedded-firmware-rtos-engineer-28073061652.html",
+   "src": "Jobsgo",
+   "n": "Đăng 20/07/2026, có thể đã đủ người.",
+   "manual": true
+  },
+  {
+   "t": "Senior AI Engineering – Computer Vision / Python / ML",
+   "c": "ORO Việt Nam",
+   "loc": "Hồ Chí Minh",
+   "sal": "Xem tin",
+   "ex": "Senior",
+   "dl": "",
+   "lv": "mid",
+   "tg": [
+    "AI",
+    "Computer Vision",
+    "Edge AI"
+   ],
+   "u": "https://topdev.vn/viec-lam/senior-ai-engineering-computer-vision-python-ml-cong-ty-tnhh-oro-viet-nam-2052507",
+   "src": "TopDev",
+   "n": "Phát triển hệ thống camera và Edge AI.",
+   "manual": true
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Việc làm AI · IoT · Nhúng · TP.HCM</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1b1f24;--mut:#5d6773;--bd:#dde1e6;--ac:#0b6e4f;--acbg:#e3f3ec;--wn:#9a5b00;--wnbg:#fff3de;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171a;--card:#1d2125;--tx:#e8eaed;--mut:#9aa4af;--bd:#2f353b;--ac:#4cc79a;--acbg:#1b3329;--wn:#f0b45a;--wnbg:#3a2d15;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14171a;--card:#1d2125;--tx:#e8eaed;--mut:#9aa4af;--bd:#2f353b;--ac:#4cc79a;--acbg:#1b3329;--wn:#f0b45a;--wnbg:#3a2d15;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:28px 0 10px}
+.sub{color:var(--mut);margin:0 0 16px}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
+.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip.on{color:#10231b}}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{padding:6px 12px;border-radius:8px;background:var(--acbg);color:var(--ac);text-decoration:none;font-size:13px;font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx);min-width:0}
+input{flex:1 1 220px}
+.job{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:10px}
+.job h3{margin:0;font-size:16px}.job h3 a{color:var(--tx);text-decoration:none}.job h3 a:hover{text-decoration:underline}
+.meta{color:var(--mut);font-size:13px;margin:4px 0 8px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;background:var(--acbg);color:var(--ac);margin:0 6px 4px 0}
+.tag.f{background:var(--wnbg);color:var(--wn)}
+.act{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.act button,.act a{font:inherit;font-size:13px;padding:5px 10px;border-radius:8px;border:1px solid var(--bd);background:transparent;color:var(--tx);cursor:pointer;text-decoration:none}
+.act .on{background:var(--acbg);border-color:var(--ac);color:var(--ac)}
+.note{background:var(--wnbg);color:var(--wn);border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:14px}
+.cnt{color:var(--mut);font-size:13px;margin:0 0 8px}
+</style>
+</head>
+<body>
+<main>
+<h1>Việc làm AI · AIoT · IoT · Nhúng · Điện tử — TP.HCM</h1>
+<p class="sub">Danh sách lọc sẵn (cập nhật 24/11/2026) và bộ tìm kiếm trực tiếp trên các trang tuyển dụng.</p>
+
+<div class="note">Danh sách bên dưới là ảnh chụp tại thời điểm tìm kiếm. Hạn nộp và mức lương có thể đã đổi, hãy mở tin gốc để kiểm tra trước khi ứng tuyển. Trang này không tự cập nhật, muốn tin mới nhất hãy dùng phần “Tìm trực tiếp”.</div>
+
+<h2>1. Tìm trực tiếp (luôn là tin mới nhất)</h2>
+<div class="box">
+  <p class="cnt">Chọn từ khóa, rồi bấm trang muốn tìm. Địa điểm mặc định: Hồ Chí Minh.</p>
+  <div class="chips" id="kw"></div>
+  <div class="links" id="lk"></div>
+</div>
+
+<h2>2. Danh sách đã lọc</h2>
+<div class="row" style="align-items:center"><button class="chip on" id="upd">Cập nhật danh sách</button><span class="cnt" id="updst" style="margin:0"></span></div>
+<div class="row">
+  <input id="q" type="search" placeholder="Lọc theo tên vị trí, công ty, kỹ năng…">
+  <select id="lv"><option value="">Mọi cấp độ</option><option value="fresher">Fresher / Intern / Junior</option><option value="mid">Mid / Senior</option></select>
+  <select id="st"><option value="">Tất cả</option><option value="saved">Đã lưu</option><option value="applied">Đã nộp</option></select>
+</div>
+<div class="chips" id="tg" style="margin-bottom:12px"></div>
+<p class="cnt" id="cnt"></p>
+<div id="list"></div>
+</main>
+
+<script>
+var KW=["AI","AIoT","IoT","Embedded","Điện tử","Firmware","Edge AI","Computer Vision"];
+var sel={};KW.forEach(function(k){sel[k]=true});
+var SITES=[
+ ["Google · 7 ngày qua",function(k){return "https://www.google.com/search?tbs=qdr:w&q="+encodeURIComponent("("+k.map(function(x){return '"'+x+'"'}).join(" OR ")+') tuyển dụng "Hồ Chí Minh"')}],
+ ["LinkedIn",function(k){return "https://www.linkedin.com/jobs/search/?f_TPR=r604800&location="+encodeURIComponent("Ho Chi Minh City")+"&keywords="+encodeURIComponent(k.join(" OR "))}],
+ ["TopCV",function(k){return "https://www.topcv.vn/tim-viec-lam-moi-nhat?keyword="+encodeURIComponent(k[0]||"")}],
+ ["ITviec",function(k){return "https://itviec.com/it-jobs/"+encodeURIComponent((k[0]||"embedded").toLowerCase().replace(/\s+/g,"-"))+"/ho-chi-minh-hcm"}],
+ ["TopDev",function(k){return "https://topdev.vn/viec-lam-it?keyword="+encodeURIComponent(k[0]||"")}],
+ ["VietnamWorks",function(k){return "https://www.vietnamworks.com/viec-lam?q="+encodeURIComponent(k[0]||"")}],
+ ["Indeed",function(k){return "https://vn.indeed.com/jobs?l=Ho+Chi+Minh&q="+encodeURIComponent(k.join(" OR "))}]
+];
+function drawKW(){
+  var c=document.getElementById("kw");c.innerHTML="";
+  KW.forEach(function(k){var b=document.createElement("button");b.className="chip"+(sel[k]?" on":"");b.textContent=k;
+    b.onclick=function(){sel[k]=!sel[k];drawKW()};c.appendChild(b)});
+  var act=KW.filter(function(k){return sel[k]});var l=document.getElementById("lk");l.innerHTML="";
+  var note=document.createElement("p");note.className="cnt";
+  SITES.forEach(function(s,i){var a=document.createElement("a");a.target="_blank";a.rel="noopener";a.textContent=s[0]+" ↗";
+    if(!act.length){a.style.opacity=.4;a.removeAttribute("href")}else{
+      var list=(i>=2&&i<=5)?act:act;a.href=s[1](list)}
+    l.appendChild(a)});
+}
+var JOBS=[];
+var tgSel="";var st={};
+try{st=JSON.parse(localStorage.getItem("jobst")||"{}")}catch(e){}
+function save(){try{localStorage.setItem("jobst",JSON.stringify(st))}catch(e){}}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function drawTg(){
+  var c=document.getElementById("tg");c.innerHTML="";
+  [""].concat(KW).forEach(function(k){var b=document.createElement("button");b.className="chip"+(tgSel===k?" on":"");b.textContent=k||"Tất cả";
+    b.onclick=function(){tgSel=k;drawTg();draw()};c.appendChild(b)});
+}
+function draw(){
+  var q=document.getElementById("q").value.toLowerCase(),lv=document.getElementById("lv").value,s=document.getElementById("st").value;
+  var r=JOBS.filter(function(j){
+    var txt=(j.t+" "+j.c+" "+j.tg.join(" ")+" "+(j.n||"")).toLowerCase();
+    return (!q||txt.indexOf(q)>-1)&&(!lv||j.lv===lv)&&(!tgSel||j.tg.indexOf(tgSel)>-1)&&(!s||st[j.u]===s)});
+  r.sort(function(a,b){return (a.lv==="fresher"?0:1)-(b.lv==="fresher"?0:1)});
+  document.getElementById("cnt").textContent=r.length+" / "+JOBS.length+" vị trí";
+  var L=document.getElementById("list");L.innerHTML="";
+  r.forEach(function(j){
+    var d=document.createElement("div");d.className="job";
+    d.innerHTML='<h3><a href="'+esc(j.u)+'" target="_blank" rel="noopener">'+esc(j.t)+'</a></h3>'+
+    '<div class="meta">'+[j.c,j.loc,j.sal,j.ex&&('KN: '+j.ex),j.dl&&('Hạn: '+j.dl),j.src,j.isNew&&'MỚI'].filter(Boolean).map(esc).join(' · ')+'</div>'+
+    (j.lv==="fresher"?'<span class="tag f">Hợp người mới</span>':'')+j.tg.map(function(x){return '<span class="tag">'+esc(x)+'</span>'}).join("")+
+    (j.n?'<div class="meta">'+esc(j.n)+'</div>':'')+
+    '<div class="act"><a href="'+esc(j.u)+'" target="_blank" rel="noopener">Xem tin ↗</a></div>';
+    var a=d.querySelector(".act");
+    [["saved","Lưu"],["applied","Đã nộp"]].forEach(function(p){
+      var b=document.createElement("button");b.textContent=p[1];if(st[j.u]===p[0])b.className="on";
+      b.onclick=function(){if(st[j.u]===p[0])delete st[j.u];else st[j.u]=p[0];save();draw()};a.appendChild(b)});
+    L.appendChild(d)});
+}
+["q","lv","st"].forEach(function(id){document.getElementById(id).addEventListener("input",draw)});
+drawKW();drawTg();draw();
+function today(){return new Date().toLocaleDateString("sv")}
+function lastUpd(){try{return localStorage.getItem("lastupd")}catch(e){return null}}
+function setBtn(){var b=document.getElementById("upd"),d=lastUpd()===today();b.disabled=d;b.style.opacity=d?.5:1;b.textContent=d?"Đã cập nhật hôm nay (mai bấm lại được)":"Cập nhật danh sách"}
+function load(bust){return fetch("jobs.json"+(bust?"?t="+Date.now():""),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){JOBS=d.jobs||[];document.getElementById("updst").textContent="Dữ liệu cập nhật: "+(d.updated||"?")+" · "+JOBS.length+" tin";draw()}).catch(function(){document.getElementById("updst").textContent="Không đọc được jobs.json (hãy mở qua github.io, không mở file trực tiếp)"})}
+document.getElementById("upd").onclick=function(){load(true).then(function(){try{localStorage.setItem("lastupd",today())}catch(e){}setBtn()})};
+setBtn();load(false);
+
+</script>
+</body>
+</html>
